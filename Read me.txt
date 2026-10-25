@@ -1,0 +1,27 @@
+Horadric Forge — Diablo II / Lord of Destruction character editor, patches 1.00 to 1.14d.
+(Modeled on ZonFire99's Hero Editor.)
+
+Run HoradricForge.exe. Nothing is installed; you can keep this folder anywhere.
+Keep resources.neu next to HoradricForge.exe — it holds the editor itself.
+
+- Close Diablo II before editing a character.
+- Every save keeps a backup next to the character file (name + day + time, .bak).
+- Renaming a character renames its file too (the game only loads a character whose file name
+  matches its name); the old file stays as the backup.
+- A file whose checksum is wrong (changed outside the game) can still be opened after a warning;
+  saving writes a correct checksum.
+- Drop a .d2s file onto HoradricForge.exe to open it directly.
+- "New" creates a brand-new hero for any patch, like the game's own hero selection.
+  Save it in your Diablo II save folder; the file name must match the character's name.
+- Choosing a unique, set item, magic affix or crafting recipe gives the item its real attributes
+  for the patch you pick, from that patch's own game tables.
+- Item pictures, skill icons and hero animations come from your own Diablo II install. The editor
+  finds the game by itself; if it can't, click "Game folder..." and choose the folder with d2data.mpq.
+  Settings are kept in a .storage folder next to HoradricForge.exe.
+- If an item can't be fully read, it's outlined in red and kept exactly as it was.
+
+Needs Microsoft Edge WebView2, which Windows 10 and 11 already include.
+
+Free software under the GPL-3.0. Built on work from D2CE (Walter Couto), Jamella's Diablo II
+Editor, Mark Adler's blast.c and blizzhackers/d2data.
+Not affiliated with Blizzard Entertainment or ZonFire99.
